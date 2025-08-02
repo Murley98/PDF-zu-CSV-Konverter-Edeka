@@ -1,8 +1,9 @@
-entrypoint = "main.py"
+entrypoint = "app.py"
 modules = ["python-3.11"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["glibcLocales", "jre"]
 
 [unitTest]
 language = "python3"
@@ -11,5 +12,21 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["python3", "main.py"]
+run = "streamlit run app.py"
 deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 8501
+externalPort = 80
+
+[[ports]]
+localPort = 8502
+externalPort = 3000
+
+[[ports]]
+localPort = 8503
+externalPort = 3001
+
+[[ports]]
+localPort = 8504
+externalPort = 3002
