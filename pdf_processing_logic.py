@@ -41,8 +41,8 @@ MARKET_PASSWORDS = {
     "UNTERHACHING": "Unterhaching", # Placeholder - replace with actual keywords for other markets
     "PULLACH": "Pullach",                # Placeholder - replace with actual keywords for other markets
     # NEUE PLATZHALTER FÜR DOHLE (AEZ)-MÄRKTE BASIEREND AUF DEM LETZTEN WORT IN "AEZ Haus XX NAME"
-    "ISARTAL": "DohlePasswortIsartal",       # Beispiel für "AEZ Haus 80 Isartal"
-    "MARTINSRIED": "DohlePasswortMartinsried", # Beispiel für "AEZ Haus 60 Martinsried"
+    "ISARTAL": "Isartal",       # Beispiel für "AEZ Haus 80 Isartal"
+    "MARTINSRIED": "Martinsried", # Beispiel für "AEZ Haus 60 Martinsried"
     # Fügen Sie hier weitere Dohle-Märkte hinzu, falls nötig
 }
 

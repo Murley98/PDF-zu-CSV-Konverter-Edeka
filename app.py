@@ -7,14 +7,14 @@ import zipfile
 from pdf_processing_logic import process_single_pdf
 
 st.set_page_config(layout="wide")
-st.title("📄 Edeka Bestellungen Konverter")
+st.title("📄 Edeka-Bestellungen Konverter")
 st.markdown("""
     Dieses Tool konvertiert die Edeka bestell PDF´s automatisch in die Passenden CSV Dateien für CSB.
 
     **So funktioniert's:**
     1.  Ziehen Sie Ihre PDF-Bestellungsdateien in das Drag & Drop-Feld unten.
     2.  Klicken Sie auf den "Dateien konvertieren"-Button.
-    3.  Laden Sie die generierten CSV-Dateien direkt hier herunter.
+    3.  Laden Sie die generierten CSV-Dateien direkt hier herunter WOW.
 """)
 
 uploaded_files = st.file_uploader(
@@ -92,4 +92,4 @@ if st.button("**Dateien konvertieren**", key="convert_button"):
         st.info("Alle temporären Dateien wurden bereinigt.") 
 
 st.markdown("---")
-st.markdown("Ein Tool bereitgestellt von Simon Murr.")
+st.markdown("Ein Tool bereitgestellt von Simon Murr ;).")
