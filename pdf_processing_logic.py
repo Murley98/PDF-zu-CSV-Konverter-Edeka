@@ -171,7 +171,7 @@ def process_single_pdf(pdf_input_path, temp_csv_output_dir, final_csv_download_d
             for page in pdf.pages:
                 # Use different bounding boxes for page 1 vs. other pages if layout differs
                 bbox_to_use = BBOX_PAGE1 if page.page_number == 1 else BBOX_OTHER_PAGES
-                tables = page.crop(bbox_to_use).extract_tables({
+                tables = page.crop((bbox_to_use[0], bbox_to_use[1], bbox_to_use[2], bbox_to_use[3])).extract_tables({
                     "vertical_strategy": "explicit", # Use defined vertical lines for column separation
                     "horizontal_strategy": "text",   # Detect horizontal lines based on text position
                     "explicit_vertical_lines": vertical_lines,
